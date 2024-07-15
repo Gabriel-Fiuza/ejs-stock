@@ -4,23 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            background-color: #6d6c6c;
+        }
+        button{
+            padding: .4rem .8rem;
+            border-radius: 0.3rem;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
-    <a href="/">Início</a>
+    <a href="/"><button>Início</button></a>
     <div class="form">
         <form action="/sucess" method="POST">
-            <label for="name">Nome da criança: </label>
-            <input type="text" name="name" id="name" autocomplete="off">
-            <label for="age">Idade: </label>
-            <input type="number" name="age" id="age" min="1">
-            <label for="masc">Masculino </label>
-            <input type="radio" name="gender" id="masc" value="Masculino">
-            <label for="fem">Feminino </label>
-            <input type="radio" name="gender" id="fem" value="Feminino">
-            <label for="clothing">Tamanho que veste: </label>
-            <input type="number" name="clothing" id="clothing" min="1">
-            <label for="mother-name">Nome da mãe: </label>
-            <input type="text" name="motherName" id="mother-name" autocomplete="off">
+            <div>
+                <label for="name">Nome da criança: </label>
+                <input type="text" name="name" id="name" autocomplete="off">
+            </div>
+            <div>
+                <label for="number">Número do calçado: </label>
+                <input type="number" name="number" id="number">
+            </div>
+            <div>
+                <label for="age">Idade: </label>
+                <input type="number" name="age" id="age" min="1">
+            </div>
+            <div>
+                <label for="masc">Masculino </label>
+                <input type="radio" name="gender" id="masc" value="Masculino">
+            </div>
+            <div>
+                <label for="fem">Feminino </label>
+                <input type="radio" name="gender" id="fem" value="Feminino">
+            </div>
+            <div>
+                <label for="clothing">Tamanho que veste: </label>
+                <input type="number" name="clothing" id="clothing" min="1">
+            </div>
+            <div>
+                <label for="mother-name">Nome da mãe: </label>
+                <input type="text" name="motherName" id="mother-name" autocomplete="off">
+            </div>
             <button type="submit">Cadastrar</button>
         </form>
     </div>

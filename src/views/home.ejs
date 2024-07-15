@@ -3,11 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles-home.css">
     <title>Home</title>
+    <style>
+        h1{
+            font-size: 3rem;
+            font-family: sans-serif;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            background-color: #6d6c6c;
+        }
+        .buttons{
+            display: flex;
+            gap: 1.3rem;
+            margin-top: 1.2rem;
+        }
+        button{
+            padding: .4rem .8rem;
+            border-radius: 0.3rem;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <h1>Cadastro dos Sapatos</h1>
-    <a href="/register"><button>Adicionar novo nome</button></a>
-    <button>Visão geral</button>
+    <div class="buttons">
+        <a href="/register"><button>Adicionar novo nome</button></a>
+        <a href="/overview"><button>Visão geral</button></a>
+    </div>
 </body>
 </html>
