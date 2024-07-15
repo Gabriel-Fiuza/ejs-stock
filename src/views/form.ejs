@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <a href="/">Início</a>
+    <div class="form">
+        <form action="/sucess" method="POST">
+            <label for="name">Nome da criança: </label>
+            <input type="text" name="name" id="name" autocomplete="off">
+            <label for="age">Idade: </label>
+            <input type="number" name="age" id="age" min="1">
+            <label for="masc">Masculino </label>
+            <input type="radio" name="gender" id="masc" value="Masculino">
+            <label for="fem">Feminino </label>
+            <input type="radio" name="gender" id="fem" value="Feminino">
+            <label for="clothing">Tamanho que veste: </label>
+            <input type="number" name="clothing" id="clothing" min="1">
+            <label for="mother-name">Nome da mãe: </label>
+            <input type="text" name="motherName" id="mother-name" autocomplete="off">
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('name').focus()
+    </script>
+</body>
+</html>
