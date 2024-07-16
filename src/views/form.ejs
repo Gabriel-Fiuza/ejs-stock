@@ -9,6 +9,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: sans-serif;
         }
         body{
             display: flex;
@@ -17,12 +18,15 @@
             align-items: center;
             height: 100vh;
             width: 100vw;
-            background-color: #6d6c6c;
+            background-color: #363636;
         }
         button{
             padding: .4rem .8rem;
             border-radius: 0.3rem;
             cursor: pointer;
+            font-size: 1rem;
+            font-weight: 800;
+            font-weight: 700;
         }
     </style>
 </head>
@@ -31,33 +35,33 @@
     <a href="/"><button>Início</button></a>
     <div class="form">
         <form action="/sucess" method="POST">
-            <div>
+            <div class="inputs">
                 <label for="name">Nome da criança: </label>
-                <input type="text" name="name" id="name" autocomplete="off">
+                <input type="text" name="name" id="name" autocomplete="off" required>
             </div>
-            <div>
+            <div class="inputs">
                 <label for="number">Número do calçado: </label>
-                <input type="number" name="number" id="number">
+                <input type="number" name="number" id="number" autocomplete="off" required>
             </div>
-            <div>
+            <div class="inputs">
                 <label for="age">Idade: </label>
                 <input type="number" name="age" id="age" min="1">
             </div>
-            <div>
+            <div class="inputs">
                 <label for="masc">Masculino </label>
                 <input type="radio" name="gender" id="masc" value="Masculino">
             </div>
-            <div>
+            <div class="inputs">
                 <label for="fem">Feminino </label>
                 <input type="radio" name="gender" id="fem" value="Feminino">
             </div>
-            <div>
+            <div class="inputs">
                 <label for="clothing">Tamanho que veste: </label>
                 <input type="number" name="clothing" id="clothing" min="1">
             </div>
-            <div>
+            <div class="inputs">
                 <label for="mother-name">Nome da mãe: </label>
-                <input type="text" name="motherName" id="mother-name" autocomplete="off">
+                <input type="text" name="motherName" id="mother-name" autocomplete="off" required>
             </div>
             <button type="submit">Cadastrar</button>
         </form>

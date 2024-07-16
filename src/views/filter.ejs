@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visão geral</title>
+    <title>Filtro</title>
 </head>
 <body>
     <table>
+        <a href="/"><button>Início</button></a>
         <tr>
             <th>Nome da criança</th>
             <th>Quanto calça</th>
@@ -15,17 +16,16 @@
             <th>Tamanho que veste</th>
             <th>Nome da mãe</th>
         </tr>
-        <% database.forEach(child => { %>
+        <% filteredArray.forEach(element => { %>
             <tr>
-                <td><%= child.childName %></td>
-                <td><%= child.shoeNumber %></td>
-                <td><%= child.childAge %></td>
-                <td><%= child.gender %></td>
-                <td><%= child.clothing %></td>
-                <td><%= child.motherName %></td>
+                <td> <%= element.childName %> </td>
+                <td> <%= element.shoeNumber %> </td>
+                <td> <%= element.childAge %> </td>
+                <td> <%= element.gender %> </td>
+                <td> <%= element.clothing %> </td>
+                <td> <%= element.motherName %> </td>
             </tr>
         <% }) %>
     </table>
-    <a href="/"><button>Voltar</button></a>
 </body>
 </html>
