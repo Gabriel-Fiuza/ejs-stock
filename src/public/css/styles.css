@@ -1,0 +1,53 @@
+:root{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 2rem;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #202020;
+    color: #fff;
+}
+table, th, td{
+    border: 0.3rem solid;
+    border-collapse: collapse;
+    padding: 1.5rem;
+}
+table{
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+    text-align: center;
+}
+th{
+    width: 15rem;
+}
+button{
+    background-color: #161616;
+    color: #fff;
+    border: 0.2rem solid #fff;
+    border-radius: .5rem;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.deleteForm{
+    position: absolute;
+    top: 4rem;
+    left: 10rem;;
+}
+.turnBack{
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+}
