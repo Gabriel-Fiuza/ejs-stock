@@ -17,7 +17,7 @@ table, th, td{
     border: .1rem solid #ddd;
 }
 table{
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-left: 12rem;
     border-collapse: collapse;
     width: 60%;
@@ -58,7 +58,7 @@ button{
     border-radius: .5rem;
 }
 .turnBack{
+    margin-left: 68rem;
     position: relative;
-    top: -0.9rem;
-    left: 37%;
+    top: -.9rem;
 }
