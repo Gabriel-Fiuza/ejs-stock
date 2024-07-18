@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
     <title>Home</title>
 </head>
 <body>
-    <h1>Cadastro dos Sapatos</h1>
-    <div class="buttons">
-        <a href="/register"><button>Adicionar novo nome</button></a>
-        <a href="/overview"><button>Visão geral</button></a>
+    <div class="content">
+        <h1>Cadastro de Sapatos</h1>
+        <div class="buttons">
+            <a href="/register"><button>Adicionar novo nome</button></a>
+            <a href="/overview"><button>Visão geral</button></a>
+        </div>
+        <form action="/toFilter" method="POST">
+            <label for="numberToFilter">Pesquisar por numeração: </label>
+            <input type="number" name="numberToFilter" id="numberToFilter">
+            <button type="submit">Pesquisar</button>
+        </form>
     </div>
-    <form action="/toFilter" method="POST">
-        <label for="numberToFilter">Pesquisar por numeração: </label>
-        <input type="number" name="numberToFilter" id="numberToFilter">
-        <button type="submit">Pesquisar</button>
-    </form>
 </body>
 </html>

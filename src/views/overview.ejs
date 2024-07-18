@@ -7,6 +7,12 @@
     <title>Visão geral</title>
 </head>
 <body>
+    <form class="deleteForm" action="/delete" method="POST">
+        <label for="delete">Deletar cadastro: </label>
+        <input type="number" name="delete" id="delete" placeholder=" ID">
+        <button type="submit">Deletar</button>
+    </form>
+    <a href="/" class="turnBack"><button>Voltar</button></a>
     <table>
         <tr>
             <th>ID</th>
@@ -14,7 +20,7 @@
             <th>Quanto calça</th>
             <th>Idade</th>
             <th>Sexo</th>
-            <th>Tamanho que veste</th>
+            <th>Tamanho</th>
             <th>Nome da mãe</th>
         </tr>
         <% database.forEach(child => { %>
@@ -29,11 +35,5 @@
             </tr>
         <% }) %>
     </table>
-    <form class="deleteForm" action="/delete" method="POST">
-        <label for="delete">Deletar cadastro: </label>
-        <input type="number" name="delete" id="delete" placeholder=" ID">
-        <button type="submit">Deletar</button>
-    </form>
-    <a href="/" class="turnBack"><button>Voltar</button></a>
 </body>
 </html>

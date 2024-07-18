@@ -39,6 +39,11 @@ app.post('/delete', (req, res) => {
         return child.childID !== idToDelete
     })
     database = deletedChildArray
+    fs.writeFile(path.join(__dirname, 'database.json'), JSON.stringify(database), (err) => {
+        if(err){
+            console.log(err.message)
+        }
+    } )
     res.redirect('/overview')
 })
 
