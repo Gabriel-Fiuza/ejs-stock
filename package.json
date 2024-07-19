@@ -1,4 +1,7 @@
 {
+  "scripts": {
+        "dev": "node c:/Users/Fiuza/ejs-stock/src/index.js"
+    },
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.19.2"
